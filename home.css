@@ -1,0 +1,169 @@
+body h1, h2, h3, a {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-weight: normal;
+}
+
+#header {
+	margin: 0;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+}
+
+img#header_logo {
+	height: 80px;
+	margin: 5px 20px 5px 5px;
+	padding: 0;
+	float: left;
+}
+
+#header h1 {
+	border-left: medium solid #595959;
+	border-color: #737373;
+	float: left;
+	margin: 20px 0 0 0;
+	color: #737373;
+	font-weight: medium;
+	font-size: 30px;
+	padding: 8px 0 8px 25px;
+}
+
+img#menu_icon {
+    height: 35px;
+    margin: 28px 20px 0 0;
+    float: right;
+}
+
+#menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 90px;
+	left: 0;
+	z-index: 1;
+	background-image: url("images/honeymenu.jpg");
+	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+}
+
+#menu ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+	margin: 50px 0;
+}
+
+#menu h1#menu_title {
+	text-decoration: underline;
+	color: white;
+	margin: 50px 0 0 0;
+	text-align: center;
+	font-size: 40px;
+}
+
+#menu h1 {
+	text-align: center;
+	font-size: 35px;
+}
+
+#menu a {
+	text-decoration: none;
+	color: #737373;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	color: #737373;
+}
+
+.main {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.main img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#dew_1 iframe {
+	pointer-events: none;
+}
+
+#dew_1 {
+	margin: 90px 0 0 0;
+}
+
+img#logo_green {
+	position: absolute;
+	z-index: 0;
+	top: 100px;
+	left: 25%;
+	width: 50%;
+}
+
+.main .content {
+	position: relative;
+	bottom: 500px;
+	width: 80%;
+}
+
+#dew_4 {
+	position: relative;
+	top: -500px;
+}
+
+#dew_2 .content img {
+	border-right: medium solid;
+	border-color: #AFD9A7;
+	margin-left: 15%;
+	margin-right: 10%;
+	padding-bottom: 100px;
+	padding-right: 10%;
+	width: 200px;
+	float: left;
+}
+
+#dew_2 .content h1, h3 {
+	color: #737373;
+}
+
+#menu_button a {
+	border: medium solid;
+	border-color: #737373;
+	text-decoration: none;
+	color: #737373;
+}
+
+.bg_sm {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+.bg_lg {
+	display: none;
+}
+
+.bg_sm {
+	display: block;
+}
+
+img#logo_green {
+	position: absolute;
+	z-index: 0;
+	top: 200px;
+	left: 20%;
+	width: 60%;
+}
+
+#dew_2 .content img {
+	margin-left: 5%;
+	width: 35%;
+}
+
+}

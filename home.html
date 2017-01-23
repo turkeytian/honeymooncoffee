@@ -36,7 +36,7 @@
 <div id="header">
 	<a href="?"><img id="header_logo" src="images/logo_icon.png"></a>
 	<h1>HOME</h1>
-	<img id="menu_icon" src="images/menu.png">
+	<img id="menu_icon" src="images/menu.png" onclick="mobile_menu()">
 </div>
 
 <div id="menu">
@@ -52,11 +52,12 @@
 </div>
 
 <div id="dew_1" class="main">
-	<img src="images/logo_green.png" id="logo_green" class="bg_sm">
-	<iframe frameborder="0" height="710px" width="100%"
-    src="https://youtube.com/embed/p6QPL7eIlIc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=p6QPL7eIlIc" frameborder="0" allowfullscreen>
+	<iframe class="desktop" frameborder="0" height="710px" width="100%" src="https://youtube.com/embed/p6QPL7eIlIc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=p6QPL7eIlIc" frameborder="0" allowfullscreen>
   </iframe>
-	<img src="images/dew_1_sm.jpg" class="bg_sm">
+	<div class="mobile">
+		<img src="images/logo_green.png" id="logo_green">
+		<img src="images/dew_1_sm.jpg">
+        </div>
 </div>
 
 <div id="dew_2" class="main">

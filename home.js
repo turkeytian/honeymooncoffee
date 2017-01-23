@@ -1,5 +1,8 @@
-$(function() {
-	$("#menu_icon").on("click", function() {
-		$("#menu").slideToggle();
-	});
-});
+function mobile_menu() {
+	$("#menu").slideToggle();
+	$(".main").toggle();
+}
+
+function menu() {
+	$("#menu").slideToggle();
+}

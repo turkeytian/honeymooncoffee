@@ -36,7 +36,7 @@ img#menu_icon {
     height: 50%;
     margin: 15px;
     float: right;
-		cursor: pointer;
+    cursor: pointer;
 }
 
 #menu {
@@ -62,12 +62,12 @@ img#menu_icon {
 	color: white;
 	margin: 50px 0 0 0;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 #menu h1 {
 	text-align: center;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 #menu a {
@@ -78,6 +78,10 @@ img#menu_icon {
 #menu a:hover {
 	text-decoration: none;
 	color: #737373;
+}
+
+.desktop {
+	display: none;
 }
 
 .main {
@@ -103,9 +107,9 @@ img#menu_icon {
 img#logo_green {
 	position: absolute;
 	z-index: 0;
-	top: 100px;
-	left: 25%;
-	width: 50%;
+	top: 200px;
+	left: 20%;
+	width: 60%;
 }
 
 .main .content {
@@ -141,25 +145,13 @@ img#logo_green {
 	color: #737373;
 }
 
-.bg_sm {
+@media screen and (min-width: 700px) {
+.mobile {
 	display: none;
 }
 
-@media screen and (max-width: 800px) {
-.bg_lg {
-	display: none;
-}
-
-.bg_sm {
+.desktop {
 	display: block;
-}
-
-img#logo_green {
-	position: absolute;
-	z-index: 0;
-	top: 200px;
-	left: 20%;
-	width: 60%;
 }
 
 #dew_2 .content img {

@@ -12,37 +12,38 @@ body h1, h2, h3, a {
 	top: 0;
 	left: 0;
 	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+	height: 60px;
 }
 
 img#header_logo {
-	height: 80px;
-	margin: 5px 20px 5px 5px;
-	padding: 0;
+	height: 80%;
+	margin: 6px 15px;
 	float: left;
 }
 
 #header h1 {
-	border-left: medium solid #595959;
+	border-left: 2px solid #595959;
 	border-color: #737373;
 	float: left;
-	margin: 20px 0 0 0;
+	margin: 8px 0 0 0;
 	color: #737373;
 	font-weight: medium;
 	font-size: 30px;
-	padding: 8px 0 8px 25px;
+	padding: 5px 15px;
 }
 
 img#menu_icon {
-    height: 35px;
-    margin: 28px 20px 0 0;
+    height: 50%;
+    margin: 15px;
     float: right;
+		cursor: pointer;
 }
 
 #menu {
 	display: none;
 	position: fixed;
 	width: 100%;
-	top: 90px;
+	top: 60px;
 	left: 0;
 	z-index: 1;
 	background-image: url("images/honeymenu.jpg");
@@ -96,7 +97,7 @@ img#menu_icon {
 }
 
 #dew_1 {
-	margin: 90px 0 0 0;
+	margin: 60px 0 0 0;
 }
 
 img#logo_green {

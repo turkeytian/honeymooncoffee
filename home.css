@@ -45,8 +45,9 @@ img#menu_icon {
 	width: 100%;
 	top: 60px;
 	left: 0;
+	bottom: 0;
 	z-index: 1;
-	background-image: url("images/honeymenu.jpg");
+	background-image: url("images/honeymenu.png");
 	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
 }
 
@@ -154,9 +155,10 @@ img#logo_green {
 	display: block;
 }
 
-#dew_2 .content img {
-	margin-left: 5%;
-	width: 35%;
+#menu {
+	width: 150px;
+	left: auto;
+	right: 0;
 }
 
 }

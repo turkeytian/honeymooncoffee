@@ -11,6 +11,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="home.js"></script>
 
+<script src="https://lightwidget.com/widgets/lightwidget.js"></script>
+
 <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
@@ -42,7 +44,7 @@
 <div id="menu">
 	<h1 id="menu_title">Menu</h1>
 	<ul>
-		<li><h1><a href="#">About</a></h1></li>
+		<li><h1><a href="#dew_3">About</a></h1></li>
 		<li><h1><a href="#">Coffee</a></h1></li>
 		<li><h1><a href="#">Food</a></h1></li>
 		<li><h1><a href="#">Gallery</a></h1></li>
@@ -51,15 +53,21 @@
 	</ul>
 </div>
 
-<div id="dew_1" class="main">
-	<iframe class="desktop" frameborder="0" height="710px" width="100%" src="https://youtube.com/embed/p6QPL7eIlIc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=p6QPL7eIlIc" frameborder="0" allowfullscreen>
-  </iframe>
+<ul class="accordion" data-accordion>
+
+<li class="accordion-navigation">
+    <a href="#panel1a">Accordion 1</a>
+<div id="panel1a" class="content active main">
+	<!--iframe class="desktop" frameborder="0" height="720px" width="100%" src="https://youtube.com/embed/p6QPL7eIlIc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=p6QPL7eIlIc" frameborder="0" allowfullscreen>
+  </iframe-->
 	<div class="mobile">
 		<img src="images/logo_green.png" id="logo_green">
-        </div>
+  </div>
 </div>
+</li>
 
-<div id="dew_2" class="main">
+<li class="accordion-navigation">
+<div id="panel2a" class="content active">
 	<div class="content">
 		<img src="images/coffee.png">
 		<div id="about">
@@ -71,9 +79,18 @@
 		</div>
 	</div>
 </div>
+</li>
 
 <div id="dew_3" class="main">
 		<h2 class="menu_button"><a href="#">Coffee Menu</a></h2>
 		<h2 class="menu_button"><a href="#">Food Menu</a></h2>
 </div>
+
+<div id="dew_4" class="main">
+	<iframe src="http://lightwidget.com/widgets/afc087545f0154f68d023032a0152674.html"
+					scrolling="no" allowtransparency="true" class="lightwidget-widget"
+					style="width: 100%; border: 0; overflow: hidden;">
+	</iframe>
+</div>
+
 </body>

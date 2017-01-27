@@ -32,10 +32,30 @@
   </head>
 
   <body>
-    <video height="100%" autoplay>
-      <source src="video/Moon_landing.mp4" type="video/mp4">
-    </video>
 
+    <div id="header">
+      <a href="?"><img id="header_logo" src="images/logo_icon.png"></a>
+      <h1>HOME</h1>
+      <img id="menu_icon" src="images/menu.png" onclick="menu()">
+    </div>
+
+    <div id="menu">
+      <h1 id="menu_title">Menu</h1>
+      <ul>
+        <li><h1><a href="#dew_1">About</a></h1></li>
+        <li><h1><a href="#dew_3">Coffee</a></h1></li>
+        <li><h1><a href="#">Food</a></h1></li>
+        <li><h1><a href="#">Gallery</a></h1></li>
+        <li><h1><a href="#">Catering</a></h1></li>
+        <li><h1><a href="#">Contact</a></h1></li>
+      </ul>
+    </div>
+
+    <div id="dew_1">
+      <video autoplay width="100%">
+        <source src="video/Moon_landing.mp4" type="video/mp4">
+      </video>
+    </div>
     
   </body>
 

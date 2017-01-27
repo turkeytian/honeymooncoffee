@@ -1,3 +1,8 @@
+:root {
+  --dew-main: #adcacc;
+  --dew-second: #d4a154;
+}
+
 body h1, h2, h3, a {
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	font-weight: normal;
@@ -11,12 +16,15 @@ body {
   height: 100%;
 }
 
-video {
-	left: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+#dew_1 {
+  margin: 60px 0 0 0;
+  height: calc(100% - 60px);
+  background-image: url("images/dew_1_mobile.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#dew_1 video {
 }
 
 #header {
@@ -102,7 +110,7 @@ img#menu_icon {
 }
 
 .main {
-	width: 100%;
+	width: 100px;
 	margin: 0;
 	padding: 0;
 }
@@ -113,14 +121,8 @@ img#menu_icon {
 	margin: 0;
 }
 
-#panel1a iframe {
+#dew_1 iframe {
 	pointer-events: none;
-}
-
-#panel1a {
-	margin: 60px 0 0 0;
-	background-image: url("images/dew_1_mobile.jpg");
-	background-size: cover;
 }
 
 img#logo_green {
@@ -129,13 +131,13 @@ img#logo_green {
 	width: 100%;
 }
 
-#panel2a .content {
+#dew_2 .content {
 	background-image: url("images/dew_2_mobile.jpg");
 	background-size: cover;
 	padding-bottom: 40px;
 }
 
-#panel2a .content img {
+#dew_2 .content img {
 	margin: 40px 25% 0;
 	width: 50%;
 }

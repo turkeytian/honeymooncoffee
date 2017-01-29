@@ -210,6 +210,7 @@ img#logo_green {
 
 #dew_2 {
 	background-image: url("images/dew_2_mobile.jpg");
+  background-size: cover;
 }
 
 #dew_2 .content {
@@ -255,7 +256,7 @@ img#logo_green {
 
 #dew_4 {
   background-image: url("images/dew_4_mobile.jpg");
-  background-size: contain;;
+  background-size: cover;
 }
 
 #dew_4 iframe {
@@ -279,7 +280,6 @@ img#logo_green {
 
 #dew_2 {
   background-image: url("images/dew_2_desktop.jpg");
-  background-size: contain;
   margin-top: 60px;
   padding: 0;
   top: 60px;
@@ -301,8 +301,6 @@ img#logo_green {
 
 #dew_4 {
   background-image: url("images/dew_4_desktop.jpg");
-  background-size: cover;
-
 }
 
 }

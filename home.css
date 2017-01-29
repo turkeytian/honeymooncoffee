@@ -16,15 +16,91 @@ body {
   height: 100%;
 }
 
-#dew_1 {
-  margin: 60px 0 0 0;
-  height: calc(100% - 60px);
-  background-image: url("images/dew_1_mobile.jpg");
-  background-size: cover;
-  overflow: hidden;
+video#intro_video {
+  position: fixed;
+  background-color: #000;
+  top: 60px;
+  left: 50%;
+  height: 100%;
+  min-width: 100%;
+  z-index: 20;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-#dew_1 video {
+.hexagon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 69.28px;
+  margin: 34.64px 0;
+  background-image: url("images/header_logo_green.png");
+  background-size: auto 138.5641px;
+  background-position: center;
+}
+
+.hexagon:hover {
+  top: 60px;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 15;
+  width: 84.85px;
+  height: 84.85px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 17.57px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 120.0000px;
+  height: 69.2820323027551px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-34.6410px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-34.6410px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-34.6410px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -42.4264px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -42.4264px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 120.0000px;
+  height: 69.2820px;
+  z-index: 16;
+  background: inherit;
 }
 
 #header {
@@ -32,7 +108,7 @@ body {
 	background-color: white;
 	width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 25;
 	top: 0;
 	left: 0;
 	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
@@ -49,7 +125,7 @@ img#header_logo {
 	border-left: 2px solid #595959;
 	border-color: #737373;
 	float: left;
-	margin: 8px 0 0 0;
+	margin: 5px 0 0 0;
 	color: #737373;
 	font-weight: medium;
 	font-size: 30px;
@@ -70,7 +146,7 @@ img#menu_icon {
 	top: 60px;
 	left: 0;
 	bottom: 0;
-	z-index: 1;
+	z-index: 24;
 	background-image: url("images/honeymenu.png");
 	box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
 }
@@ -105,12 +181,17 @@ img#menu_icon {
 	color: #737373;
 }
 
+#dew_1 {
+  background-image: url("images/dew_1_mobile.jpg");
+  background-size: cover;
+}
+
 .desktop {
 	display: none;
 }
 
 .main {
-	width: 100px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -121,20 +202,20 @@ img#menu_icon {
 	margin: 0;
 }
 
-#dew_1 iframe {
-	pointer-events: none;
-}
-
 img#logo_green {
 	z-index: 0;
 	margin: 50px 0 200px 0;
 	width: 100%;
 }
 
-#dew_2 .content {
+#dew_2 {
 	background-image: url("images/dew_2_mobile.jpg");
+}
+
+#dew_2 .content {
 	background-size: cover;
 	padding-bottom: 40px;
+  min-height: 600px;
 }
 
 #dew_2 .content img {
@@ -172,9 +253,16 @@ img#logo_green {
 	background-color: #adcacc;
 }
 
+#dew_4 {
+  background-image: url("images/dew_4_mobile.jpg");
+  background-size: contain;;
+}
 
+#dew_4 iframe {
+  margin: 20px 10%;
+}
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 640px) {
 .mobile {
 	display: none;
 }
@@ -187,6 +275,34 @@ img#logo_green {
 	width: 150px;
 	left: auto;
 	right: 0;
+}
+
+#dew_2 {
+  background-image: url("images/dew_2_desktop.jpg");
+  background-size: contain;
+  margin-top: 60px;
+  padding: 0;
+  top: 60px;
+}
+
+#dew_2 .content img {
+  padding: 0;
+  margin: 150px 0 0 10%;
+  width: 15%;
+}
+
+#dew_2 .content #about {
+  width: 60%;
+  margin: 100px 10% 50px 0;
+  padding-left: 10%;
+  float: right;
+  border-left: solid #737373;
+}
+
+#dew_4 {
+  background-image: url("images/dew_4_desktop.jpg");
+  background-size: cover;
+
 }
 
 }

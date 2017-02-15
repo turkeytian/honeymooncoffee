@@ -286,6 +286,10 @@ img#logo_green {
   top: 60px;
 }
 
+#dew_2 .content {
+  min-height: 850px;
+}
+
 #dew_2 .content img {
   padding: 0;
   margin: 150px 0 0 10%;
@@ -304,4 +308,10 @@ img#logo_green {
   background-image: url("images/dew_4_desktop.jpg");
 }
 
+}
+
+@media screen and (min-width: 1000px) {
+#dew_2 .content {
+  min-height: 600px;
+}
 }

@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Honey Moon Coffee Co.</title>
-
+    <title>Honey Moon Coffee Co.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
     <link rel="stylesheet" type="text/css" href="home.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
     <script type="text/javascript" src="home.js"></script>
     <script src="https://lightwidget.com/widgets/lightwidget.js"></script>
 
@@ -39,54 +39,84 @@
     <div id="header">
         <a href="?"><img id="header_logo" src="images/logo_icon.png"></a>
         <h1>HOME</h1>
-        <img id="menu_icon" src="images/menu.png" onclick="menu()">
+        <img id="menu_icon" src="images/menu.png">
     </div>
 
     <div id="menu">
-        <h1 id="menu_title">Menu</h1>
+        <h1 id="menu_title">HOME</h1>
         <ul>
             <li>
-                <h1><a href="#dew_2">About</a></h1></li>
+                <h1><a href="#dew_2">ABOUT</a></h1></li>
             <li>
-                <h1><a href="#dew_3">Coffee</a></h1></li>
+                <h1><a href="#">MENU</a></h1></li>
             <li>
-                <h1><a href="#">Food</a></h1></li>
+                <h1><a href="#dew_4">GALLERY</a></h1></li>
             <li>
-                <h1><a href="#dew_4">Gallery</a></h1></li>
+                <h1><a href="#">RESERVE</a></h1></li>
             <li>
-                <h1><a href="#">Catering</a></h1></li>
-            <li>
-                <h1><a href="#">Contact</a></h1></li>
+                <h1><a href="#footer">CONTACT</a></h1></li>
         </ul>
     </div>
 
-    <div id="dew_1">
-        <video autoplay muted loop id="intro_video" class="desktop">
-        <source src="video/Moon_landing.mp4" type="video/mp4">
-      </video>
-        <div class="hexagon desktop">
+    <div id="dew_1" class="main">
+        <video autoplay muted loop id="intro_video" class="hide-for-small-only">
+          <source src="video/Moon_landing.mp4" type="video/mp4">
+        </video>
+        <div class="hexagon hide-for-small-only">
             <div class="hexTop"></div>
             <div class="hexBottom"></div>
         </div>
-        <img src="images/logo_green.png" id="logo_green" class="mobile">
+        <img src="images/logo_green.png" id="logo_green" class="show-for-small-only">
     </div>
 
     <div id="dew_2" class="main">
-        <div class="content">
-            <img src="images/coffee.png">
-            <div id="about">
-                <h3>Hello,</h3>
-                <h1>Coffee Lovers</h1>
-                <h3>Honey Moon is a coffee company located in Evansville.</h3>
-                <h3>Together, we are creating a space where people can pause and appreciate each other over curated drinks, our unique moon food menu, and artisanal ice cream.</h3>
+            <h1 class="section-title">ABOUT US</h1>
+            <div class="row content" data-equalizer data-equalize-on="medium">
+                <div class="medium-4 large-3 large-offset-1 columns">
+                    <img src="images/coffee.png">
+                </div>
+                <div class="medium-6 columns end">
+                    <div class="about">
+                        <h3>Hello,</h3>
+                        <h2>Coffee Lovers</h2>
+                        <h3>Honey Moon is a coffee company located in Evansville.</h3>
+                        <h3>Together, we are creating a space where people can pause and appreciate each other over curated drinks, our unique moon food menu, and artisanal ice cream.</h3>
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
 
     <div id="dew_4" class="main">
+      <h1 class="section-title">GALLERY</h1>
         <iframe src="http://lightwidget.com/widgets/c48f549e85c55171806466561bbaaa53.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 80%; border: 0; overflow: hidden;">
     	</iframe>
     </div>
+
+    <div clss="main" id="footer">
+      <h1 class="section-title">CONTACT</h1>
+        <div class="hide-for-small-only">
+            <iframe class="float-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.326786044518!2d-87.5314143849835!3d37.96950237972446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886e2abcb72a420f%3A0x4ac3c5a87c34ac2c!2sHoney+Moon+Coffee+Co.!5e0!3m2!1sen!2sus!4v1487381063838"
+                width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="show-for-small-only">
+            <iframe class="float-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.326786044518!2d-87.5314143849835!3d37.96950237972446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886e2abcb72a420f%3A0x4ac3c5a87c34ac2c!2sHoney+Moon+Coffee+Co.!5e0!3m2!1sen!2sus!4v1487381063838"
+                width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contact">
+          <h3>Hours:</h3>
+          <h3>Mon. - Sun. 7 AM - 9 AM</h3>
+            <h3><i class="fi-telephone"></i> (812) 602-3123</h3>
+          <h1><a href="#"><i class="fi-social-facebook"></i></a>
+          <a href="#"><i class="fi-social-instagram"></i></a></h1>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        })
+    </script>
 </body>
 
 </html>

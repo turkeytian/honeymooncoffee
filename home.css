@@ -4,7 +4,7 @@
 }
 
 body h1, h2, h3, a {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
 
@@ -28,6 +28,13 @@ video#intro_video {
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.video-caption {
+  position: absolute;
+  top: 65px;
+  left: calc(50% - 45px);
+  z-index: 17;
 }
 
 .hexagon {
@@ -181,14 +188,16 @@ img#menu_icon {
     color: #737373;
 }
 
+h1.section-title {
+  padding-top: 50px;
+  text-align: center;
+}
+
 #dew_1 {
     margin-top: 60px;
     background-image: url("images/dew_1_mobile.jpg");
     background-size: cover;
-}
-
-.desktop {
-    display: none;
+    z-index: -10;
 }
 
 .main {
@@ -209,98 +218,104 @@ img#logo_green {
     width: 100%;
 }
 
+#dew_2 h1.section-title {
+  color: #737373;
+}
+
 #dew_2 {
     background-image: url("images/dew_2_mobile.jpg");
     background-size: cover;
-}
-
-#dew_2 .content {
-    background-size: cover;
-    padding-bottom: 40px;
-    min-height: 600px;
+    position: relative;
+    z-index: -20;
 }
 
 #dew_2 .content img {
-    margin: 40px 25% 0;
-    width: 50%;
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+#dew_2 .about {
+  padding: 40px;
 }
 
-#about {
-    margin: 0 5%;
-}
-
-#about h3 {
+.about h3 {
     color: #737373;
 }
 
-#about h1 {
+.about h2 {
     color: #d4a154;
 }
 
-#dew_3 {
-    position: relative;
-    background-image: url("images/dew_3.png");
-    background-size: cover;
-    padding: 80px 0;
-}
-
-#dew_3 h2 {
-    text-align: center;
-}
-
-#dew_3 a {
-    border: medium solid;
-    border-color: #737373;
-    text-decoration: none;
-    color: white;
-    background-color: #adcacc;
+#dew_4 .section-title {
+  color: #000000;
 }
 
 #dew_4 {
     background-image: url("images/dew_4_mobile.jpg");
     background-size: cover;
+    position: relative;
+    z-index: -40;
 }
 
 #dew_4 iframe {
     margin: 20px 10%;
 }
 
+#footer {
+position: relative;
+  z-index: -100;
+    background-color: #adcacc;
+}
+
+#footer h3, h1, a {
+  color: #FFFFFF;
+}
+
+#footer iframe {
+    margin: 20px auto;
+}
+
+#footer .contact {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.main {
+  box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+}
+
 @media screen and (min-width: 640px) {
-    .mobile {
-        display: none;
-    }
-    .desktop {
-        display: block;
-    }
     #menu {
         width: 150px;
         left: auto;
         right: 0;
     }
+    #dew_1 {
+      border-bottom: 0px;
+    }
+    #dew_2 h1.section-title{
+      padding-top: 100px;
+    }
     #dew_2 {
         background-image: url("images/dew_2_desktop.jpg");
-        margin-top: 60px;
-        padding: 0;
+    }
+    #dew_2 .content .about {
+      padding: 0;
+        border-left: solid #737373;
+          padding-left: 40px;
+        margin-bottom: 50px;
     }
     #dew_2 .content img {
-        padding: 0;
-        margin: 150px 0 0 10%;
-        width: 15%;
-    }
-    #dew_2 .content #about {
-        width: 60%;
-        margin: 100px 10% 50px 0;
-        padding-left: 10%;
-        float: right;
-        border-left: solid #737373;
+        margin-top: 100px;
+        width: 80%;
     }
     #dew_4 {
         background-image: url("images/dew_4_desktop.jpg");
     }
 }
 
-@media screen and (min-width: 1000px) {
-    #dew_2 .content {
-        min-height: 600px;
-    }
+@media screen and (min-width: 1024px) {
+#dew_2 .content .about {
+padding-left: 100px;
+}
 }

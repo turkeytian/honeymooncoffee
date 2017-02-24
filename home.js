@@ -1,7 +1,3 @@
-function menu() {
-    $("#menu").slideToggle();
-}
-
 $(document).ready(function() {
     var iev = 0;
     var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
@@ -38,7 +34,20 @@ $(document).ready(function() {
         });
     }
 
+    $('#menu a').on('click', function() {
+        if ($('video#intro_video').is(':visible')) {
+            $('video#intro_video').slideUp();
+        }
+        $('#menu').slideToggle();
+    });
+
+    $('#menu_icon').on('click', function() {
+        $('#menu').slideToggle();
+    });
+
     $('.hexagon').on('click', function() {
         $('video#intro_video').slideDown();
     });
+    
+    $(document).foundation();
 });

@@ -17,7 +17,7 @@ $(document).ready(function() {
                 console.log('Up');
             } else if (st > lastScrollTop) {
                 console.log('Down');
-                $('video#intro_video').slideUp();
+                     $('video#intro_video').slideUp();
             }
             lastScrollTop = st;
         });
@@ -29,7 +29,7 @@ $(document).ready(function() {
                 console.log('Up');
             } else if (e.originalEvent.wheelDelta < 0) {
                 console.log('Down');
-                $('video#intro_video').slideUp();
+                            $('video#intro_video').slideUp();
             }
         });
     }
@@ -48,6 +48,13 @@ $(document).ready(function() {
     $('.hexagon').on('click', function() {
         $('video#intro_video').slideDown();
     });
-    
+
+    $("#menu a").click(function() {
+      var to_id = "#" + $(this).attr("scrollTo");
+        $("html, body").animate({
+            scrollTop: $(to_id).offset().top - 60
+        }, 500);
+        return true;
+    });
     $(document).foundation();
 });

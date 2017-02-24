@@ -237,7 +237,17 @@ img#logo_green {
 #dew_2 .about {
   padding: 40px;
 }
-
+#dew_2 .menu-button {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#dew_2 a.menu-button-link {
+  background-color: #adcacc;
+}
+#dew_2 a.menu-button-link:hover {
+  box-shadow: 0px 0px 20px 0px #000;
+}
 .about h3 {
     color: #737373;
 }

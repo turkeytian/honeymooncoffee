@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
     <link rel="stylesheet" type="text/css" href="home.css">
 
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
     <script type="text/javascript" src="home.js"></script>
@@ -52,7 +53,7 @@
             <li>
                 <h1><a href="#" scrollTo="dew_4">GALLERY</a></h1></li>
             <li>
-                <h1><a href="#">RESERVE</a></h1></li>
+                <h1><a data-open="reservation">RESERVE</a></h1></li>
             <li>
                 <h1><a href="#" scrollTo="footer">CONTACT</a></h1></li>
         </ul>
@@ -70,33 +71,133 @@
     </div>
 
     <div id="dew_2" class="main">
-            <h1 class="section-title">ABOUT US</h1>
-            <div class="row content" data-equalizer data-equalize-on="medium">
-                <div class="medium-4 large-3 large-offset-1 columns">
-                    <img src="images/coffee.png">
-                </div>
-                <div class="medium-6 columns end">
-                    <div class="about">
-                        <h3>Hello,</h3>
-                        <h2>Coffee Lovers</h2>
-                        <h3>Honey Moon is a coffee company located in Evansville.</h3>
-                        <h3>Together, we are creating a space where people can pause and appreciate each other over curated drinks, our unique moon food menu, and artisanal ice cream.</h3>
-                    </div>
+        <h1 class="section-title">ABOUT US</h1>
+        <div class="row content" data-equalizer data-equalize-on="medium">
+            <div class="medium-4 large-3 large-offset-1 columns">
+                <img src="images/coffee.png">
+            </div>
+            <div class="medium-6 columns end">
+                <div class="about">
+                    <h3>Hello,</h3>
+                    <h2>Coffee Lovers</h2>
+                    <h3>Honey Moon is a coffee company located in Evansville.</h3>
+                    <h3>Together, we are creating a space where people can pause and appreciate each other over curated drinks, our unique moon food menu, and artisanal ice cream.</h3>
                 </div>
             </div>
-            <div class="menu-button">
-              <a class="button large menu-button-link" href="docs/menu.pdf"><h3>See Our Menu</h3></a>
-            </div>
+        </div>
+        <div class="menu-button">
+            <a class="button large menu-button-link" href="docs/menu.pdf"><h3>See Our Menu</h3></a>
+        </div>
     </div>
 
     <div id="dew_4" class="main">
-      <h1 class="section-title">GALLERY</h1>
+        <h1 class="section-title">GALLERY</h1>
         <iframe src="http://lightwidget.com/widgets/c48f549e85c55171806466561bbaaa53.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 80%; border: 0; overflow: hidden;">
     	</iframe>
     </div>
 
+    <div class="reveal" id="reservation" aria-labelledby="exampleModalHeader11" data-reveal>
+        <form data-abide novalidate>
+            <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <label>Number Required
+        <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+        <span class="form-error">
+          Yo, you had better fill this out, it's required.
+        </span>
+      </label>
+                    <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+                </div>
+                <div class="small-12 columns">
+                    <label>Nothing Required!
+        <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore>
+      </label>
+                    <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using `data-abide-ignore`</p>
+                </div>
+                <div class="small-12 columns">
+                    <label>Password Required
+        <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required >
+        <span class="form-error">
+          I'm required!
+        </span>
+      </label>
+                    <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+                </div>
+                <div class="small-12 columns">
+                    <label>Re-enter Password
+        <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password">
+        <span class="form-error">
+          Hey, passwords are supposed to match!
+        </span>
+      </label>
+                    <p class="help-text" id="exampleHelpText2">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-6 columns">
+                    <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
+        <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+      </label>
+                </div>
+                <div class="medium-6 columns">
+                    <label>European Cars, Choose One, it can't be the blank option.
+        <select id="select" required>
+          <option value=""></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </label>
+                </div>
+            </div>
+            <div class="row">
+
+              <!-- Name
+              Num of People
+              Phone Number
+              email
+              Comments (optional)
+            -->
+
+                <fieldset class="large-6 columns">
+                    <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
+                    <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+                </fieldset>
+                <fieldset class="large-6 columns">
+                    <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
+                    <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
+                    <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
+                    <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
+                </fieldset>
+                <fieldset class="large-6 columns">
+                    <legend>Check these out</legend>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                    <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset class="large-6 columns">
+                    <button class="button" type="submit" value="Submit">Submit</button>
+                </fieldset>
+                <fieldset class="large-6 columns">
+                    <button class="button" type="reset" value="Reset">Reset</button>
+                </fieldset>
+            </div>
+        </form>
+        <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+
     <div clss="main" id="footer">
-      <h1 class="section-title">CONTACT</h1>
+        <h1 class="section-title">CONTACT</h1>
         <div class="hide-for-small-only">
             <iframe class="float-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.326786044518!2d-87.5314143849835!3d37.96950237972446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886e2abcb72a420f%3A0x4ac3c5a87c34ac2c!2sHoney+Moon+Coffee+Co.!5e0!3m2!1sen!2sus!4v1487381063838"
                 width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -107,10 +208,10 @@
                 width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="contact">
-          <h3>Hours:</h3>
-          <h3>Mon. - Sun. 7 AM - 9 AM</h3>
+            <h3>Hours:</h3>
+            <h3>Mon. - Sun. 7 AM - 9 AM</h3>
             <h3><i class="fi-telephone"></i> (812) 602-3123</h3>
-          <h1><a href="#"><i class="fi-social-facebook"></i></a>
+            <h1><a href="#"><i class="fi-social-facebook"></i></a>
           <a href="#"><i class="fi-social-instagram"></i></a></h1>
         </div>
     </div>

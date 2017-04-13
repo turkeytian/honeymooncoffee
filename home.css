@@ -4,7 +4,7 @@
 }
 
 body h1, h2, h3, a {
-    font-family: 'Poiret One', 'sans-serif';
+    font-family: "poiret one", cursive;
     font-weight: normal;
 }
 
@@ -223,7 +223,7 @@ img#logo_green {
 }
 
 #dew_2 {
-    background-image: url("images/dew_2_mobile.jpg");
+    background-image: url("images/dew_2_new_mobile.png");
     background-size: cover;
     position: relative;
     z-index: -20;
@@ -256,14 +256,17 @@ img#logo_green {
     color: #d4a154;
 }
 
+#reservation .section-title {
+    color: #000;
+}
+
 #dew_4 .section-title {
-  color: #000000;
+  color: #FFF;
 }
 
 #dew_4 {
-    background-image: url("images/dew_4_mobile.jpg");
-    background-size: cover;
     position: relative;
+    background-color: #adcacc;
     z-index: -40;
 }
 
@@ -274,7 +277,8 @@ img#logo_green {
 #footer {
 position: relative;
   z-index: -100;
-    background-color: #adcacc;
+    background-image: url("images/dew_3_mobile.jpg");
+    background-size: cover;
 }
 
 #footer h3, h1, a {
@@ -307,7 +311,7 @@ position: relative;
       padding-top: 100px;
     }
     #dew_2 {
-        background-image: url("images/dew_2_desktop.jpg");
+        background-image: url("images/dew_2_new_desktop.png");
     }
     #dew_2 .content .about {
       padding: 0;
@@ -319,8 +323,8 @@ position: relative;
         margin-top: 100px;
         width: 80%;
     }
-    #dew_4 {
-        background-image: url("images/dew_4_desktop.jpg");
+    #footer {
+        background-image: url("images/dew_3_desktop.jpg");
     }
 }
 

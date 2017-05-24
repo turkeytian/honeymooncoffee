@@ -99,22 +99,14 @@
 
     <div class="reveal" id="reservation" aria-labelledby="exampleModalHeader11" data-reveal>
         <h1 class="section-title">RESERVE</h1>
-        <form data-abide novalidate>
-            <div data-abide-error class="alert callout" style="display: none;">
-                <p><i class="fi-alert"></i> There are some errors in your form.</p>
-            </div>
-            <label>Number Required
-        <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
-        <span class="form-error">
-          Yo, you had better fill this out, it's required.
-        </span>
-      </label>
-                    <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
-                </div>
-        </form>
         <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <form method="POST" action="email-script.php">
+          <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+            <input type="submit" value="Ok" />
+        </form>
     </div>
 
     <div clss="main" id="footer">
